@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void SelectionSort(int arr[],int size){
+	int minim;
+	int minimPos;
+	for(int i = 0; i < size ; i++){
+		minim = arr[i];
+		minimPos = i;
+		for(int j = i; j < size ; j++){
+			if(arr[j] < minim){
+				minim = arr[j];
+				minimPos = j;
+			}
+		}
+		swap(arr[i], arr[minimPos]);
+	}
+}
+
+int main(){
+	int arr[10]={4,1,6,9,8,7,3,2,5,10};
+	SelectionSort(arr,10);
+	for(int i = 0; i < 10 ; i++)cout<<arr[i]<<",";
+}
