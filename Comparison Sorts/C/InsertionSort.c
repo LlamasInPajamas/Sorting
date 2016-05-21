@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 void InsertionSort(int arr[],int size){
 	int swap;
 	for(int i = 0; i < size ; i++){
