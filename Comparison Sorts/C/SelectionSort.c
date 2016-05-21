@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 void SelectionSort(int arr[],int size){
 	int minim;
 	int minimPos;
