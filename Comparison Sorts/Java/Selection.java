@@ -1,5 +1,3 @@
-package br.com.llamas.sort.comparison.java;
-
 public class Selection {
 
 	public static void sort(int array[], int size) {
